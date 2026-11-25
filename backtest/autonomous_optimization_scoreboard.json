@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Var 1 (Alap\u00e9rtelmezett M5, Risk 1.25x)",
+    "tweaks": {
+      "risk_multiplier": 1.25,
+      "rr": 1.68,
+      "be_r": 1.25
+    },
+    "is_win_pct": 7.5,
+    "is_weekly": -0.06594109948553949,
+    "oos_win_pct": 15.0,
+    "oos_weekly": 0.009149731182795695,
+    "oos_pf": 12.414,
+    "oos_max_dd": 1.175,
+    "details": {
+      "is": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 10.0,
+          "avg_profit": -0.9345000000000001,
+          "median_profit": 0.0,
+          "avg_weekly": -0.08946562500000001,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 11.25,
+          "avg_pf": 9.923,
+          "avg_dd": 0.4325,
+          "worst_dd": 1.65,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 5.0,
+          "avg_profit": -0.4415,
+          "median_profit": 0.0,
+          "avg_weekly": -0.04241657397107897,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 8.333,
+          "avg_pf": 5.0175,
+          "avg_dd": 0.28700000000000003,
+          "worst_dd": 2.29,
+          "avg_trades": 0.45
+        }
+      },
+      "oos": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 25.0,
+          "avg_profit": 0.2500000000000001,
+          "median_profit": 0.0,
+          "avg_weekly": 0.02405752688172042,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 22.5,
+          "avg_pf": 19.878,
+          "avg_dd": 0.22749999999999998,
+          "worst_dd": 1.33,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 5.0,
+          "avg_profit": -0.06349999999999999,
+          "median_profit": 0.0,
+          "avg_weekly": -0.005758064516129033,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 5.0,
+          "avg_pf": 4.95,
+          "avg_dd": 0.051000000000000004,
+          "worst_dd": 1.02,
+          "avg_trades": 0.1
+        }
+      }
+    }
+  },
+  {
+    "name": "Var 2 (Kock\u00e1zat 1.8x, Arany 0.01 lot feloldva)",
+    "tweaks": {
+      "risk_multiplier": 1.8,
+      "rr": 1.68,
+      "be_r": 1.25
+    },
+    "is_win_pct": 25.0,
+    "is_weekly": -0.07121039523081202,
+    "oos_win_pct": 22.5,
+    "oos_weekly": 0.006759297367445306,
+    "oos_pf": 14.9795,
+    "oos_max_dd": 1.965,
+    "details": {
+      "is": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 10.0,
+          "avg_profit": -0.9345000000000001,
+          "median_profit": 0.0,
+          "avg_weekly": -0.08946562500000001,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 11.25,
+          "avg_pf": 9.923,
+          "avg_dd": 0.4325,
+          "worst_dd": 1.65,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 40.0,
+          "avg_profit": -0.5329999999999999,
+          "median_profit": 0.0,
+          "avg_weekly": -0.05295516546162404,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 39.1665,
+          "avg_pf": 34.7385,
+          "avg_dd": 0.6010000000000001,
+          "worst_dd": 3.14,
+          "avg_trades": 1.0
+        }
+      },
+      "oos": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 25.0,
+          "avg_profit": 0.2500000000000001,
+          "median_profit": 0.0,
+          "avg_weekly": 0.02405752688172042,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 22.5,
+          "avg_pf": 19.878,
+          "avg_dd": 0.22749999999999998,
+          "worst_dd": 1.33,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 20.0,
+          "avg_profit": -0.08949999999999995,
+          "median_profit": 0.0,
+          "avg_weekly": -0.01053893214682981,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 15.8335,
+          "avg_pf": 10.081,
+          "avg_dd": 0.49899999999999994,
+          "worst_dd": 2.6,
+          "avg_trades": 0.6
+        }
+      }
+    }
+  },
+  {
+    "name": "Var 3 (BE K\u00e9sleltet\u00e9s 1.45R + R/R 1.68)",
+    "tweaks": {
+      "risk_multiplier": 1.8,
+      "rr": 1.68,
+      "be_r": 1.45
+    },
+    "is_win_pct": 25.0,
+    "is_weekly": -0.07127289523081203,
+    "oos_win_pct": 22.5,
+    "oos_weekly": 0.006759297367445306,
+    "oos_pf": 14.9795,
+    "oos_max_dd": 1.965,
+    "details": {
+      "is": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 10.0,
+          "avg_profit": -0.9349999999999999,
+          "median_profit": 0.0,
+          "avg_weekly": -0.08959062500000001,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 11.25,
+          "avg_pf": 9.923,
+          "avg_dd": 0.4325,
+          "worst_dd": 1.65,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 40.0,
+          "avg_profit": -0.5329999999999999,
+          "median_profit": 0.0,
+          "avg_weekly": -0.05295516546162404,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 39.1665,
+          "avg_pf": 34.7385,
+          "avg_dd": 0.6010000000000001,
+          "worst_dd": 3.14,
+          "avg_trades": 1.0
+        }
+      },
+      "oos": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 25.0,
+          "avg_profit": 0.2500000000000001,
+          "median_profit": 0.0,
+          "avg_weekly": 0.02405752688172042,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 22.5,
+          "avg_pf": 19.878,
+          "avg_dd": 0.22749999999999998,
+          "worst_dd": 1.33,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 20.0,
+          "avg_profit": -0.08949999999999995,
+          "median_profit": 0.0,
+          "avg_weekly": -0.01053893214682981,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 15.8335,
+          "avg_pf": 10.081,
+          "avg_dd": 0.49899999999999994,
+          "worst_dd": 2.6,
+          "avg_trades": 0.6
+        }
+      }
+    }
+  },
+  {
+    "name": "Var 4 (Aszimmetrikus R/R 1.75 + BE 1.45R)",
+    "tweaks": {
+      "risk_multiplier": 1.8,
+      "rr": 1.75,
+      "be_r": 1.45
+    },
+    "is_win_pct": 25.0,
+    "is_weekly": -0.07741936874304783,
+    "oos_win_pct": 22.5,
+    "oos_weekly": 0.010077525954764544,
+    "oos_pf": 14.984749999999998,
+    "oos_max_dd": 1.965,
+    "details": {
+      "is": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 10.0,
+          "avg_profit": -0.929,
+          "median_profit": 0.0,
+          "avg_weekly": -0.08904375,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 11.25,
+          "avg_pf": 9.924,
+          "avg_dd": 0.4325,
+          "worst_dd": 1.65,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 40.0,
+          "avg_profit": -0.6659999999999999,
+          "median_profit": 0.0,
+          "avg_weekly": -0.06579498748609566,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 39.1665,
+          "avg_pf": 34.741499999999995,
+          "avg_dd": 0.6010000000000001,
+          "worst_dd": 3.14,
+          "avg_trades": 1.0
+        }
+      },
+      "oos": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 25.0,
+          "avg_profit": 0.27999999999999997,
+          "median_profit": 0.0,
+          "avg_weekly": 0.026882526881720426,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 22.5,
+          "avg_pf": 19.8815,
+          "avg_dd": 0.22749999999999998,
+          "worst_dd": 1.33,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 20.0,
+          "avg_profit": -0.047499999999999966,
+          "median_profit": 0.0,
+          "avg_weekly": -0.0067274749721913385,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 15.8335,
+          "avg_pf": 10.088,
+          "avg_dd": 0.49899999999999994,
+          "worst_dd": 2.6,
+          "avg_trades": 0.6
+        }
+      }
+    }
+  },
+  {
+    "name": "Var 5 (Konzisztens R/R 1.60 + BE 1.35R)",
+    "tweaks": {
+      "risk_multiplier": 1.8,
+      "rr": 1.6,
+      "be_r": 1.35
+    },
+    "is_win_pct": 25.0,
+    "is_weekly": -0.06653789453559511,
+    "oos_win_pct": 22.5,
+    "oos_weekly": 0.002854787727104187,
+    "oos_pf": 14.973500000000001,
+    "oos_max_dd": 1.965,
+    "details": {
+      "is": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 10.0,
+          "avg_profit": -0.942,
+          "median_profit": 0.0,
+          "avg_weekly": -0.09024687500000002,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 11.25,
+          "avg_pf": 9.922,
+          "avg_dd": 0.4325,
+          "worst_dd": 1.65,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 40.0,
+          "avg_profit": -0.41949999999999993,
+          "median_profit": 0.0,
+          "avg_weekly": -0.042828914071190216,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 39.1665,
+          "avg_pf": 34.766,
+          "avg_dd": 0.6010000000000001,
+          "worst_dd": 3.14,
+          "avg_trades": 1.0
+        }
+      },
+      "oos": {
+        "EURUSD": {
+          "n": 20,
+          "win_windows_pct": 25.0,
+          "avg_profit": 0.21699999999999994,
+          "median_profit": 0.0,
+          "avg_weekly": 0.020865860215053763,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 22.5,
+          "avg_pf": 19.874000000000002,
+          "avg_dd": 0.22749999999999998,
+          "worst_dd": 1.33,
+          "avg_trades": 0.75
+        },
+        "XAUUSD": {
+          "n": 20,
+          "win_windows_pct": 20.0,
+          "avg_profit": -0.13899999999999996,
+          "median_profit": 0.0,
+          "avg_weekly": -0.01515628476084539,
+          "hit_1pct_rate": 0.0,
+          "avg_win_rate": 15.8335,
+          "avg_pf": 10.072999999999999,
+          "avg_dd": 0.49899999999999994,
+          "worst_dd": 2.6,
+          "avg_trades": 0.6
+        }
+      }
+    }
+  }
+]

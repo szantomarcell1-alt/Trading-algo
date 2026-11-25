@@ -1,0 +1,70 @@
+2026-11-07 00:27:07 [INFO] [TitanScalper] [DRY RUN MÓD] Virtuális számlás szimuláció aktiválva.
+2026-11-07 00:27:07 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: DRY_RUN
+2026-11-07 00:27:07 [INFO] [TitanScalper.MockClient] [bold cyan][DRY RUN / SIMULATION][/bold cyan] Virtuális számla indítva. Kezdőtőke: 1000.00 USD
+2026-11-07 00:27:07 [INFO] [TitanScalper] Fő kereskedési ciklus indul. Leállítás: Ctrl + C.
+2026-11-07 00:27:11 [INFO] [TitanScalper] Elérte a maximális teszt ciklusszámot (2). Leállás.
+2026-11-07 00:27:11 [INFO] [TitanScalper.MockClient] [DRY RUN] Virtuális kapcsolat bontva.
+2026-11-07 00:27:11 [INFO] [TitanScalper] Titan Quant Scalper biztonságosan leállt.
+2026-11-07 17:11:37 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: LIVE
+2026-11-07 17:11:37 [INFO] [TitanScalper.MT5Client] Kapcsolódás a MetaTrader 5 terminálhoz (Timeout: 60000ms)...
+2026-11-07 17:11:37 [ERROR] [TitanScalper.MT5Client] MT5 Inicializálási hiba: kód=-6, üzenet=Terminal: Authorization failed
+2026-11-07 17:11:37 [ERROR] [TitanScalper] Nem sikerült kapcsolódni az MT5 terminálhoz! Győződj meg róla, hogy a MetaTrader 5 fut és az Algo Trading engedélyezve van az Eszközök -> Beállítások -> Szakértők fülön!
+2026-11-07 17:12:06 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: LIVE
+2026-11-07 17:12:06 [INFO] [TitanScalper.MT5Client] Kapcsolódás a MetaTrader 5 terminálhoz (Timeout: 60000ms)...
+2026-11-07 17:12:06 [ERROR] [TitanScalper.MT5Client] MT5 Inicializálási hiba: kód=-6, üzenet=Terminal: Authorization failed
+2026-11-07 17:12:06 [ERROR] [TitanScalper] Nem sikerült kapcsolódni az MT5 terminálhoz! Győződj meg róla, hogy a MetaTrader 5 fut és az Algo Trading engedélyezve van az Eszközök -> Beállítások -> Szakértők fülön!
+2026-11-07 17:12:12 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: LIVE
+2026-11-07 17:12:12 [INFO] [TitanScalper.MT5Client] Kapcsolódás a MetaTrader 5 terminálhoz (Timeout: 60000ms)...
+2026-11-07 17:12:12 [ERROR] [TitanScalper.MT5Client] MT5 Inicializálási hiba: kód=-6, üzenet=Terminal: Authorization failed
+2026-11-07 17:12:12 [ERROR] [TitanScalper] Nem sikerült kapcsolódni az MT5 terminálhoz! Győződj meg róla, hogy a MetaTrader 5 fut és az Algo Trading engedélyezve van az Eszközök -> Beállítások -> Szakértők fülön!
+2026-11-07 17:12:13 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: LIVE
+2026-11-07 17:12:13 [INFO] [TitanScalper.MT5Client] Kapcsolódás a MetaTrader 5 terminálhoz (Timeout: 60000ms)...
+2026-11-07 17:12:13 [ERROR] [TitanScalper.MT5Client] MT5 Inicializálási hiba: kód=-6, üzenet=Terminal: Authorization failed
+2026-11-07 17:12:13 [ERROR] [TitanScalper] Nem sikerült kapcsolódni az MT5 terminálhoz! Győződj meg róla, hogy a MetaTrader 5 fut és az Algo Trading engedélyezve van az Eszközök -> Beállítások -> Szakértők fülön!
+2026-11-07 17:12:14 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: LIVE
+2026-11-07 17:12:14 [INFO] [TitanScalper.MT5Client] Kapcsolódás a MetaTrader 5 terminálhoz (Timeout: 60000ms)...
+2026-11-07 17:12:14 [ERROR] [TitanScalper.MT5Client] MT5 Inicializálási hiba: kód=-6, üzenet=Terminal: Authorization failed
+2026-11-07 17:12:14 [ERROR] [TitanScalper] Nem sikerült kapcsolódni az MT5 terminálhoz! Győződj meg róla, hogy a MetaTrader 5 fut és az Algo Trading engedélyezve van az Eszközök -> Beállítások -> Szakértők fülön!
+2026-11-07 17:12:16 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: LIVE
+2026-11-07 17:12:16 [INFO] [TitanScalper.MT5Client] Kapcsolódás a MetaTrader 5 terminálhoz (Timeout: 60000ms)...
+2026-11-07 17:12:16 [ERROR] [TitanScalper.MT5Client] MT5 Inicializálási hiba: kód=-6, üzenet=Terminal: Authorization failed
+2026-11-07 17:12:16 [ERROR] [TitanScalper] Nem sikerült kapcsolódni az MT5 terminálhoz! Győződj meg róla, hogy a MetaTrader 5 fut és az Algo Trading engedélyezve van az Eszközök -> Beállítások -> Szakértők fülön!
+2026-11-12 20:56:45 [INFO] [TitanScalper] [DRY RUN MÓD] Virtuális számlás szimuláció aktiválva.
+2026-11-12 20:56:45 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: DRY_RUN
+2026-11-12 20:56:45 [INFO] [TitanScalper.MockClient] [bold cyan][DRY RUN / SIMULATION][/bold cyan] Virtuális számla indítva (ÉLŐ MT5 ÁRFOLYAM (Read-Only)). Kezdőtőke: 1000.00 USD
+2026-11-12 20:56:45 [INFO] [TitanScalper] Fő kereskedési ciklus indul. Leállítás: Ctrl + C.
+2026-11-12 20:56:45 [INFO] [TitanScalper.RiskManager] [bold magenta]Új kereskedési nap indul (2026-11-12)[/bold magenta] | Kezdő tőke: 1000.00 USD
+2026-11-12 20:56:55 [INFO] [TitanScalper] Elérte a maximális teszt ciklusszámot (5). Leállás.
+2026-11-12 20:56:55 [INFO] [TitanScalper.MockClient] [DRY RUN] Virtuális kapcsolat bontva.
+2026-11-12 20:56:55 [INFO] [TitanScalper] Titan Quant Scalper biztonságosan leállt.
+2026-11-12 23:41:09 [INFO] [TitanScalper] [DRY RUN MÓD] Virtuális számlás szimuláció aktiválva.
+2026-11-12 23:41:09 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: DRY_RUN
+2026-11-12 23:41:09 [INFO] [TitanScalper.MockClient] [bold cyan][PAPER TRADING / DRY RUN][/bold cyan] Virtuális számla indítva (ÉLŐ MT5 ÁRFOLYAM (Read-Only)). Kezdőtőke: 275.00 USD
+2026-11-12 23:41:09 [INFO] [TitanScalper] Fő kereskedési ciklus indul. Leállítás: Ctrl + C.
+2026-11-12 23:45:15 [INFO] [TitanScalper] Felhasználói leállítás érzékelve (Ctrl+C). Kilépés...
+2026-11-12 23:45:15 [INFO] [TitanScalper.MockClient] [DRY RUN] Virtuális kapcsolat bontva. Végső egyenleg: 275.00 USD (Nettó PnL: +0.00 USD)
+2026-11-12 23:45:15 [INFO] [TitanScalper] Titan Quant Scalper biztonságosan leállt.
+2026-11-12 23:45:24 [INFO] [TitanScalper] [DRY RUN MÓD] Virtuális számlás szimuláció aktiválva.
+2026-11-12 23:45:24 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: DRY_RUN
+2026-11-12 23:45:25 [INFO] [TitanScalper.MockClient] [bold cyan][PAPER TRADING / DRY RUN][/bold cyan] Virtuális számla indítva (ÉLŐ MT5 ÁRFOLYAM & EGYENLEG (Read-Only)). Kezdőtőke: 250.00 USD
+2026-11-12 23:45:25 [INFO] [TitanScalper] Fő kereskedési ciklus indul. Leállítás: Ctrl + C.
+2026-11-12 23:48:11 [INFO] [TitanScalper] Felhasználói leállítás érzékelve (Ctrl+C). Kilépés...
+2026-11-12 23:48:11 [INFO] [TitanScalper.MockClient] [DRY RUN] Virtuális kapcsolat bontva. Végső egyenleg: 250.00 USD (Nettó PnL: +0.00 USD)
+2026-11-12 23:48:11 [INFO] [TitanScalper] Titan Quant Scalper biztonságosan leállt.
+2026-11-12 23:51:00 [INFO] [TitanScalper] [DRY RUN MÓD] Virtuális számlás szimuláció aktiválva.
+2026-11-12 23:51:00 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: DRY_RUN
+2026-11-12 23:51:00 [INFO] [TitanScalper.MockClient] [bold cyan][PAPER TRADING / DRY RUN][/bold cyan] Virtuális számla indítva (ÉLŐ MT5 ÁRFOLYAM & EGYENLEG (Read-Only)). Kezdőtőke: 250.00 USD
+2026-11-12 23:51:00 [INFO] [TitanScalper] Fő kereskedési ciklus indul. Leállítás: Ctrl + C.
+2026-11-13 12:14:19 [INFO] [TitanScalper] [DRY RUN MÓD] Virtuális számlás szimuláció aktiválva.
+2026-11-13 12:14:19 [INFO] [TitanScalper] [bold green]Titan Quant Scalper v1.0.0 indítása...[/bold green] Mód: DRY_RUN
+2026-11-13 12:14:44 [INFO] [TitanScalper.MockClient] [bold cyan][PAPER TRADING / DRY RUN][/bold cyan] Virtuális számla indítva (ÉLŐ MT5 ÁRFOLYAM & EGYENLEG (Read-Only)). Kezdőtőke: 250.00 USD
+2026-11-13 12:14:44 [INFO] [TitanScalper] Fő kereskedési ciklus indul. Leállítás: Ctrl + C.
+2026-11-13 12:14:44 [INFO] [TitanScalper.RiskManager] [bold magenta]Új kereskedési nap indul (2026-11-13)[/bold magenta] | Kezdő tőke: 250.00 USD
+2026-11-13 12:23:02 [INFO] [TitanScalper] [bold yellow]ÚJ JELZÉS DETEKTÁLVA![/bold yellow] SELL GBPUSD | Lot: 0.03 | Belépő: 1.32291 | SL: 1.32351 | TP: 1.32180 | Konfidencia: 85% | Indok: Trend-védett eladási sweep: Hurst=0.38, SL=6.0p, CLV=-0.54
+2026-11-13 12:23:02 [INFO] [TitanScalper.MockClient] [bold cyan][PAPER ORDER OPENED][/bold cyan] #100001 SELL 0.03 lot GBPUSD @ 1.32291 | SL: 1.32351 | TP: 1.32180
+2026-11-13 12:23:02 [INFO] [TitanScalper.ExecutionManager] Pozíció regisztrálva menedzselésre: #100001 | 1R távolság: 0.00060
+2026-11-13 12:29:54 [WARNING] [TitanScalper.MockClient] [PAPER TRADING] #100001 GBPUSD STOP-LOSS KIÜTVE @ 1.32353!
+2026-11-13 12:29:54 [INFO] [TitanScalper.MockClient] [bold red][PAPER POSITION CLOSED][/bold red] #100001 GBPUSD @ 1.32353 | Nettó PnL (jutalékkal): -2.07 USD | Új Egyenleg: 247.93 USD
+2026-11-13 12:29:54 [INFO] [TitanScalper.ExecutionManager] Pozíció #100001 kikerült az aktív listából (lezárult).
+2026-11-13 12:29:54 [INFO] [TitanScalper.ExecutionManager] Pozíció #100001 realizált nettó eredmény: -2.07
+2026-11-13 12:29:54 [WARNING] [TitanScalper.RiskManager] Veszteséges trade regisztrálva! Sorozatban: 1 veszteség.

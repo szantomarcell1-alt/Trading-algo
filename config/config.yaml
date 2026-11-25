@@ -1,0 +1,108 @@
+# ====================================================================
+# TITAN QUANT SCALPER - KONFIGURÁCIÓS FÁJL
+# ====================================================================
+# Professzionális kis tőkéjű CFD / Forex scalping rendszer MetaTrader 5-höz
+
+general:
+  bot_name: "Titan Quant Scalper"
+  version: "1.0.0"
+  # Lehetséges módok: "live" (valódi MT5 bekötés), "dry_run" (szimulált MT5 virtuális számlán/papíron), "backtest"
+  mode: "dry_run"
+  log_level: "INFO" # DEBUG, INFO, WARNING, ERROR
+  heartbeat_interval_seconds: 2 # Fő ciklus futási gyakorisága másodpercben
+
+mt5:
+  # Opcionális: Ha nincs megadva, az MT5 kliens a legutóbbi aktív terminált használja.
+  # Ha több MT5 van a gépen, add meg a terminal64.exe pontos elérési útját, pl.:
+  # terminal_path: "C:\\Program Files\\MetaTrader 5\\terminal64.exe"
+  terminal_path: ""
+  login: 0 # Számlaszám (0 = MT5-ben már bejelentkezett számla használata)
+  password: "" # Opcionális jelszó
+  server: "" # Bróker szerver neve (pl.: "ICMarketsSC-Demo")
+  timeout_ms: 60000
+  magic_number: 777001 # Egyedi azonosító a bot által nyitott megbízásokhoz
+  slippage_points: 10 # Maximálisan megengedett csúszás pontban
+
+instruments:
+  symbols:
+    - name: "EURUSD"
+      enabled: true
+      max_spread_pips: 1.0
+      min_atr_pips: 1.2      # Kiszűri a pangó, lapos piaci időszakokat (M5 ATR >= 1.2 pip)
+    - name: "GBPUSD"
+      enabled: false
+      max_spread_pips: 1.5
+      min_atr_pips: 1.2
+    - name: "XAUUSD"         # Arany CFD (1 pip = $0.10)
+      enabled: true
+      max_spread_pips: 2.5   # Max $0.25 spread
+      min_atr_pips: 4.5      # Min $0.45 M1 ATR
+    - name: "US30"
+      enabled: false
+      max_spread_pips: 3.5
+      min_atr_pips: 15.0
+
+timeframes:
+  execution_tf: "M5" # Kötési idősík (M5 professzionális intraday skalpolás)
+  structure_tf: "M15" # Piaci struktúra idősík
+  regime_tf: "H1" # Piaci rezsim és intézményi makro trend idősík
+  lookback_bars: 300 # Elemzéshez betöltött gyertyák száma
+
+risk_management:
+  account_currency: "USD"
+  initial_balance: 250.0                 # Pontos $250-os számlaméret
+  risk_per_trade_percent: 1.0            # Célzott kockázat: ~$2.50 / trade (1.0%)
+  max_risk_multiplier_for_min_lot: 1.80  # 0.01 lot arany CFD-hez feloldva ($4.50 max megengedett kockázat)
+  commission_per_lot_round_turn: 7.0     # Pepperstone Razor jutalék ($0.07 / 0.01 lot)
+  min_signal_confidence: 0.80
+  max_open_positions: 2
+  max_open_positions_per_symbol: 1
+  max_daily_drawdown_percent: 3.0        # Napi max bukó: ~$7.50 (3%)
+  max_total_drawdown_percent: 8.5        # Szigorú intézményi plafon a 10% megvédésére
+  max_consecutive_losses: 3              # "3-Strike" szabály: 3 egymást követő bukó után 60 perc pihenő!
+  consecutive_loss_cooldown_minutes: 60
+  min_margin_level_percent: 160.0
+
+execution_and_trade_management:
+  risk_reward_ratio: 2.20                # Aszimmetrikus 1:2.20 hozam/kockázat pozitív matematikai várható értékhez
+  use_breakeven: true
+  breakeven_trigger_r: 1.45              # 1.45R-nél aktiválódik a profit-lock (több teret adva a normál pullbacknek)
+  breakeven_buffer_pips: 2.0             # +2.0 pip garantált nettó profit jutalékkal fedezve
+  use_partial_take_profit: false         # 0.01 - 0.03 lotnál a teljes méret fut a 2.20R célárig
+  use_trailing_stop: true                # Bekapcsolva: profitvédelem volatilis mozgások esetén
+  trailing_stop_activation_r: 1.60       # Szigorúan 1.45R breakeven után aktiválódik, nem fojtja meg a 2.20R célárat
+  trailing_stop_atr_multiplier: 1.5      # 1.5 ATR követési távolság
+  max_holding_bars_m1: 55
+
+session_filter:
+  # CFDs és Devizák esetén a spread éjjel kinyílik (Rollover)!
+  # Kizárólag a leglikvidebb európai és amerikai kereskedési órákban tradel:
+  enabled: true
+  # Időzóna: UTC (MT5 szerverek általában UTC+2 vagy UTC+3)
+  allowed_start_utc_hour: 8 # 08:00 UTC (Londoni aktív nyitás)
+  allowed_end_utc_hour: 14 # 14:00 UTC (US makroadatok és late session whipsaw kiszűrése)
+  avoid_rollover_window: true # 21:00 - 23:00 UTC között szigorúan TILTVA van a kereskedés!
+  avoid_friday_close: true # Péntek este 19:00 UTC után nem nyit új pozíciót a hétvégi gap-ek miatt
+
+strategy_parameters:
+  hurst_period: 100
+  hurst_trend_threshold: 0.55            # Optimalizált trend küszöbérték (Milestone 3: Brown-zaj szűrés)
+  hurst_mean_reversion_threshold: 0.45
+  bb_length: 20
+  bb_std: 2.0
+  kc_length: 20
+  kc_multiplier: 1.5
+  ema_fast: 9
+  ema_medium: 21
+  ema_slow: 50
+  ema_trend_htf: 200
+  rsi_length: 14
+  rsi_overbought: 70.0
+  rsi_oversold: 30.0
+  atr_period: 14
+  atr_sl_multiplier: 1.5
+
+regime_detection:
+  hurst_period: 100
+  hurst_trend_threshold: 0.55
+  hurst_mean_reversion_threshold: 0.45

@@ -1,0 +1,149 @@
+# ====================================================================
+# GBPJPY QUANT SCALPER - CONFIGURATION SPECIFICATION
+# ====================================================================
+# Tailored for GBPJPY Scalping ($250 Capital, 1:30 Leverage)
+
+general:
+  bot_name: "GBPJPY Quant Scalper"
+  version: "1.0.0"
+  mode: "dry_run" # "live", "dry_run", "backtest"
+  log_level: "INFO" # DEBUG, INFO, WARNING, ERROR
+  heartbeat_interval_seconds: 2.0
+
+mt5:
+  terminal_path: ""
+  login: 0
+  password: ""
+  server: ""
+  timeout_ms: 60000
+  magic_number: 777101
+  slippage_points: 10 # 10 points = 1.0 pip slippage tolerance
+
+symbol:
+  name: "GBPJPY"
+  symbol: "GBPJPY"
+  enabled: true
+  digits: 3
+  point: 0.001
+  pip_size: 0.01
+  contract_size: 100000.0
+  tick_value: 0.626076
+  max_spread_pips: 2.5
+  min_atr_pips: 4.0
+
+instruments:
+  symbols:
+    - name: "GBPJPY"
+      symbol: "GBPJPY"
+      enabled: true
+      digits: 3
+      point: 0.001
+      pip_size: 0.01
+      contract_size: 100000.0
+      tick_value: 0.626076
+      max_spread_pips: 2.5 # Strict spread threshold (normal spread 1.5 - 2.0 pips)
+      min_atr_pips: 4.0    # Minimum M5 ATR for sufficient volatility
+
+timeframes:
+  execution_tf: "M5" # Primary execution timeframe
+  structure_tf: "M15" # Market structure timeframe
+  regime_tf: "H1" # Regime & macro trend timeframe
+  lookback_bars: 350
+
+risk:
+  account_currency: "USD"
+  initial_balance: 250.0
+  leverage: 30.0
+  risk_per_trade_percent: 1.0
+  max_risk_multiplier_for_min_lot: 1.80
+  commission_per_lot_round_turn: 7.0
+  min_signal_confidence: 0.80
+  max_open_positions: 1
+  max_open_positions_per_symbol: 1
+  max_daily_drawdown_percent: 3.0
+  max_consecutive_losses: 3
+  consecutive_loss_cooldown_minutes: 60
+  min_margin_level_percent: 200.0
+
+risk_management:
+  account_currency: "USD"
+  initial_balance: 250.0
+  leverage: 30.0
+  risk_per_trade_percent: 1.0 # $2.50 target risk per trade
+  max_risk_multiplier_for_min_lot: 1.80 # Allows 0.01 lot with up to ~50 pips SL ($4.50 max risk ceiling)
+  commission_per_lot_round_turn: 7.0 # $0.07 round-turn on 0.01 lot
+  min_signal_confidence: 0.80
+  max_open_positions: 1 # Strict single-position cap for $250 capital
+  max_open_positions_per_symbol: 1
+  max_daily_drawdown_percent: 3.0 # $7.50 max daily loss
+  max_consecutive_losses: 3 # 3-Strike circuit breaker rule
+  consecutive_loss_cooldown_minutes: 60
+  min_margin_level_percent: 200.0 # Guard against margin call (>200% required)
+
+execution_and_trade_management:
+  risk_reward_ratio: 1.68
+  use_breakeven: true
+  breakeven_trigger_r: 1.45 # Breakeven triggered at 1.45R profit
+  breakeven_buffer_pips: 2.0 # +2.0 pips buffer covering spread and commission
+  use_partial_take_profit: false # Single-lot run to target
+  use_trailing_stop: true
+  trailing_stop_activation_r: 1.2
+  trailing_stop_atr_multiplier: 1.5
+  max_holding_bars_m1: 55
+
+sessions:
+  enabled: true
+  allowed_start_utc_hour: 1
+  allowed_end_utc_hour: 20
+  avoid_rollover_window: true
+  rollover_buffer_minutes: 30
+  avoid_friday_close: true
+
+session_filter:
+  enabled: true
+  allowed_start_utc_hour: 1 # 01:00 UTC (Tokyo session open)
+  allowed_end_utc_hour: 20 # 20:00 UTC (Close of NY session)
+  avoid_rollover_window: true # 21:00 - 23:00 UTC spread spike lockout
+  rollover_buffer_minutes: 30 # 30-min buffer around rollover window
+  avoid_friday_close: true # Stops opening trades before Friday 19:00 UTC
+
+indicators:
+  hurst_period: 100
+  hurst_trend_threshold: 0.55
+  hurst_mean_reversion_threshold: 0.45
+  bb_length: 20
+  bb_std: 2.0
+  kc_length: 20
+  kc_multiplier: 1.5
+  ema_fast: 9
+  ema_medium: 21
+  ema_slow: 50
+  ema_trend_htf: 200
+  rsi_length: 14
+  rsi_overbought: 70.0
+  rsi_oversold: 30.0
+  atr_period: 14
+  atr_sl_multiplier: 1.5
+
+strategy_parameters:
+  hurst_period: 100
+  hurst_trend_threshold: 0.55
+  hurst_mean_reversion_threshold: 0.45
+  bb_length: 20
+  bb_std: 2.0
+  kc_length: 20
+  kc_multiplier: 1.5
+  ema_fast: 9
+  ema_medium: 21
+  ema_slow: 50
+  ema_trend_htf: 200
+  rsi_length: 14
+  rsi_overbought: 70.0
+  rsi_oversold: 30.0
+  atr_period: 14
+  atr_sl_multiplier: 1.5
+  min_rr_ratio: 1.0
+  min_atr_pips: 4.0
+  use_macro_filter: true
+  macro_trend_buffer_pips: 15.0
+  london_tp_multiple: 2.0

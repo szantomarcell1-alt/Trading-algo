@@ -1,0 +1,366 @@
+[
+  {
+    "window": {
+      "id": 1,
+      "year": 2020,
+      "start": "2020-04-20T00:00:00+00:00",
+      "end": "2020-05-04T00:00:00+00:00",
+      "label": "2020 Post-Covid Consolidation",
+      "desc": "Extreme volatility after March crash, central bank stimulus surge."
+    },
+    "baseline": {
+      "mode": "Baseline M5",
+      "bars_processed": 2879,
+      "total_trades": 12,
+      "win_rate": 16.67,
+      "net_profit_usd": -5.16,
+      "net_return_pct": -2.06,
+      "profit_factor": 0.5756,
+      "max_drawdown_pct": 3.908,
+      "sharpe_ratio": -2.183,
+      "sortino_ratio": -3.0572,
+      "avg_win_usd": 2.36,
+      "avg_loss_usd": 0.82,
+      "exits": {
+        "TP": 2,
+        "SL": 9,
+        "TRAILING_STOP": 1,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 244.84
+    },
+    "enhanced": {
+      "mode": "Enhanced M5",
+      "bars_processed": 2879,
+      "total_trades": 2,
+      "win_rate": 50.0,
+      "net_profit_usd": 1.82,
+      "net_return_pct": 0.73,
+      "profit_factor": 2.9091,
+      "max_drawdown_pct": 0.552,
+      "sharpe_ratio": 2.1586,
+      "sortino_ratio": 7.4864,
+      "avg_win_usd": 3.21,
+      "avg_loss_usd": 1.1,
+      "exits": {
+        "TP": 1,
+        "SL": 1,
+        "TRAILING_STOP": 0,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 251.82
+    }
+  },
+  {
+    "window": {
+      "id": 2,
+      "year": 2021,
+      "start": "2021-08-02T00:00:00+00:00",
+      "end": "2021-08-16T00:00:00+00:00",
+      "label": "2021 Summer Range Consolidation",
+      "desc": "Low-volatility summer range-bound choppy sideways market."
+    },
+    "baseline": {
+      "mode": "Baseline M5",
+      "bars_processed": 2879,
+      "total_trades": 4,
+      "win_rate": 75.0,
+      "net_profit_usd": 0.85,
+      "net_return_pct": 0.34,
+      "profit_factor": 2.6376,
+      "max_drawdown_pct": 0.632,
+      "sharpe_ratio": 2.4984,
+      "sortino_ratio": 9.797,
+      "avg_win_usd": 0.76,
+      "avg_loss_usd": 0.86,
+      "exits": {
+        "TP": 1,
+        "SL": 1,
+        "TRAILING_STOP": 2,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 250.85
+    },
+    "enhanced": {
+      "mode": "Enhanced M5",
+      "bars_processed": 2879,
+      "total_trades": 0,
+      "win_rate": 0.0,
+      "net_profit_usd": 0.0,
+      "net_return_pct": 0.0,
+      "profit_factor": 0.0,
+      "max_drawdown_pct": 0.0,
+      "sharpe_ratio": 0.0,
+      "sortino_ratio": 0.0,
+      "avg_win_usd": 0.0,
+      "avg_loss_usd": 0.0,
+      "exits": {
+        "TP": 0,
+        "SL": 0,
+        "TRAILING_STOP": 0,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 250.0
+    }
+  },
+  {
+    "window": {
+      "id": 3,
+      "year": 2022,
+      "start": "2022-10-10T00:00:00+00:00",
+      "end": "2022-10-24T00:00:00+00:00",
+      "label": "2022 UK Gilt Crisis & BOJ FX Interventions",
+      "desc": "Historic GBP crash and BOJ massive direct yen intervention."
+    },
+    "baseline": {
+      "mode": "Baseline M5",
+      "bars_processed": 2878,
+      "total_trades": 31,
+      "win_rate": 41.94,
+      "net_profit_usd": 8.1,
+      "net_return_pct": 3.24,
+      "profit_factor": 1.7543,
+      "max_drawdown_pct": 2.6877,
+      "sharpe_ratio": 19.739,
+      "sortino_ratio": 999.0,
+      "avg_win_usd": 2.12,
+      "avg_loss_usd": 0.87,
+      "exits": {
+        "TP": 8,
+        "SL": 16,
+        "TRAILING_STOP": 7,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 258.1
+    },
+    "enhanced": {
+      "mode": "Enhanced M5",
+      "bars_processed": 2878,
+      "total_trades": 10,
+      "win_rate": 40.0,
+      "net_profit_usd": 4.75,
+      "net_return_pct": 1.9,
+      "profit_factor": 2.1874,
+      "max_drawdown_pct": 1.656,
+      "sharpe_ratio": 11.2417,
+      "sortino_ratio": 999.0,
+      "avg_win_usd": 2.7,
+      "avg_loss_usd": 0.82,
+      "exits": {
+        "TP": 2,
+        "SL": 5,
+        "TRAILING_STOP": 3,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 254.75
+    }
+  },
+  {
+    "window": {
+      "id": 4,
+      "year": 2023,
+      "start": "2023-02-13T00:00:00+00:00",
+      "end": "2023-02-27T00:00:00+00:00",
+      "label": "2023 Global Inflation & Rates Repricing",
+      "desc": "Persistent inflation repricing, BoE rate hikes vs ultra-loose BOJ."
+    },
+    "baseline": {
+      "mode": "Baseline M5",
+      "bars_processed": 2879,
+      "total_trades": 18,
+      "win_rate": 38.89,
+      "net_profit_usd": -0.89,
+      "net_return_pct": -0.36,
+      "profit_factor": 1.2423,
+      "max_drawdown_pct": 2.2673,
+      "sharpe_ratio": -0.812,
+      "sortino_ratio": -1.4009,
+      "avg_win_usd": 1.09,
+      "avg_loss_usd": 0.56,
+      "exits": {
+        "TP": 3,
+        "SL": 11,
+        "TRAILING_STOP": 4,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 249.11
+    },
+    "enhanced": {
+      "mode": "Enhanced M5",
+      "bars_processed": 2879,
+      "total_trades": 2,
+      "win_rate": 50.0,
+      "net_profit_usd": -0.49,
+      "net_return_pct": -0.2,
+      "profit_factor": 0.5908,
+      "max_drawdown_pct": 0.5302,
+      "sharpe_ratio": 0.0,
+      "sortino_ratio": -7.2111,
+      "avg_win_usd": 0.41,
+      "avg_loss_usd": 0.69,
+      "exits": {
+        "TP": 0,
+        "SL": 1,
+        "TRAILING_STOP": 1,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 249.51
+    }
+  },
+  {
+    "window": {
+      "id": 5,
+      "year": 2024,
+      "start": "2024-07-29T00:00:00+00:00",
+      "end": "2024-08-12T00:00:00+00:00",
+      "label": "2024 Historic BOJ Hike & Carry Trade Unwind",
+      "desc": "BOJ rate hike trigger, massive global yen carry trade liquidation."
+    },
+    "baseline": {
+      "mode": "Baseline M5",
+      "bars_processed": 2879,
+      "total_trades": 33,
+      "win_rate": 36.36,
+      "net_profit_usd": -8.51,
+      "net_return_pct": -3.4,
+      "profit_factor": 0.7909,
+      "max_drawdown_pct": 6.44,
+      "sharpe_ratio": -3.2646,
+      "sortino_ratio": -3.9806,
+      "avg_win_usd": 1.78,
+      "avg_loss_usd": 1.28,
+      "exits": {
+        "TP": 7,
+        "SL": 20,
+        "TRAILING_STOP": 6,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 241.49
+    },
+    "enhanced": {
+      "mode": "Enhanced M5",
+      "bars_processed": 2879,
+      "total_trades": 12,
+      "win_rate": 41.67,
+      "net_profit_usd": 3.28,
+      "net_return_pct": 1.31,
+      "profit_factor": 1.4586,
+      "max_drawdown_pct": 3.0981,
+      "sharpe_ratio": 1.0367,
+      "sortino_ratio": 2.6024,
+      "avg_win_usd": 2.76,
+      "avg_loss_usd": 1.35,
+      "exits": {
+        "TP": 3,
+        "SL": 7,
+        "TRAILING_STOP": 2,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 253.28
+    }
+  },
+  {
+    "window": {
+      "id": 6,
+      "year": 2025,
+      "start": "2025-02-10T00:00:00+00:00",
+      "end": "2025-02-24T00:00:00+00:00",
+      "label": "2025 Modern Two-Way Scalping Regime",
+      "desc": "Balanced two-way FX flow with mature microstructure patterns."
+    },
+    "baseline": {
+      "mode": "Baseline M5",
+      "bars_processed": 2879,
+      "total_trades": 25,
+      "win_rate": 20.0,
+      "net_profit_usd": -13.4,
+      "net_return_pct": -5.36,
+      "profit_factor": 0.4734,
+      "max_drawdown_pct": 5.36,
+      "sharpe_ratio": -324.8761,
+      "sortino_ratio": -7.2102,
+      "avg_win_usd": 1.8,
+      "avg_loss_usd": 0.95,
+      "exits": {
+        "TP": 4,
+        "SL": 18,
+        "TRAILING_STOP": 3,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 236.6
+    },
+    "enhanced": {
+      "mode": "Enhanced M5",
+      "bars_processed": 2879,
+      "total_trades": 4,
+      "win_rate": 50.0,
+      "net_profit_usd": 2.72,
+      "net_return_pct": 1.09,
+      "profit_factor": 88.25,
+      "max_drawdown_pct": 0.8334,
+      "sharpe_ratio": 5.7703,
+      "sortino_ratio": 999.0,
+      "avg_win_usd": 1.66,
+      "avg_loss_usd": 0.02,
+      "exits": {
+        "TP": 1,
+        "SL": 0,
+        "TRAILING_STOP": 3,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 252.72
+    }
+  },
+  {
+    "window": {
+      "id": 7,
+      "year": 2026,
+      "start": "2026-05-11T00:00:00+00:00",
+      "end": "2026-05-25T00:00:00+00:00",
+      "label": "2026 Current Year Trading Environment",
+      "desc": "Current year broker liquidity, tight spreads and session dynamics."
+    },
+    "baseline": {
+      "mode": "Baseline M5",
+      "bars_processed": 2870,
+      "total_trades": 13,
+      "win_rate": 30.77,
+      "net_profit_usd": -3.01,
+      "net_return_pct": -1.2,
+      "profit_factor": 0.7991,
+      "max_drawdown_pct": 2.284,
+      "sharpe_ratio": -5.8514,
+      "sortino_ratio": -5.4365,
+      "avg_win_usd": 1.18,
+      "avg_loss_usd": 0.66,
+      "exits": {
+        "TP": 1,
+        "SL": 6,
+        "TRAILING_STOP": 6,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 246.99
+    },
+    "enhanced": {
+      "mode": "Enhanced M5",
+      "bars_processed": 2870,
+      "total_trades": 1,
+      "win_rate": 100.0,
+      "net_profit_usd": 0.92,
+      "net_return_pct": 0.37,
+      "profit_factor": 999.0,
+      "max_drawdown_pct": 0.2663,
+      "sharpe_ratio": 0.0,
+      "sortino_ratio": 999.0,
+      "avg_win_usd": 1.06,
+      "avg_loss_usd": 0.0,
+      "exits": {
+        "TP": 0,
+        "SL": 0,
+        "TRAILING_STOP": 1,
+        "TIME_DECAY": 0
+      },
+      "final_balance": 250.92
+    }
+  }
+]
